@@ -27,13 +27,18 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-body{
+.container{
   background-color: var(--lightGrayishCyan);
+  border-radius: 0;
+  margin: 0;
 }
 
 .container__title{
+  text-align: center;
   letter-spacing: .5rem;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem;
+  background-color: var(--lightGrayishCyan);
+  border-radius: 0;
 }
 
 .title{
@@ -44,6 +49,7 @@ body{
   background-color: white;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  padding: 2.5rem 0;
 }
 
 .spliter__inputs{
@@ -174,6 +180,10 @@ body{
   background-color: var(--grayishCyan);
 }
 
+.attribution{
+  background-color: white;
+}
+
 @media screen and (min-width: 768px){
 
   .container{
@@ -218,5 +228,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .attribution{
+    background-color: var(--lightGrayishCyan);
   }
 }
