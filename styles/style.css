@@ -27,14 +27,13 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.container{
+body{
   background-color: var(--lightGrayishCyan);
 }
 
 .container__title{
-  text-align: center;
   letter-spacing: .5rem;
-  padding: 2rem;
+  padding: 2rem 0 3rem 0;
 }
 
 .title{
@@ -45,7 +44,6 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: white;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
-  padding: 2.5rem 0;
 }
 
 .spliter__inputs{

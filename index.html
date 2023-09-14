@@ -20,76 +20,77 @@
 </head>
 <body>
   <section class="container">
-    <div class="container__title">
+    <header class="container__title">
       <h1 class="title"> SPLI <br> TTER </h1>
-    </div>
-    <form class="spliter" id="form">
-      <div class="spliter__inputs">
-        <div class="spliter__bill">
-          <div class="spliter__title">
-            <label for="billInput">
-              <h2 class="spliter__label">Bill</h2>
-            </label>
-            <h5 class="spliter__msg"></h5>
+    </header>
+    <main>
+      <form class="spliter" id="form">
+        <div class="spliter__inputs">
+          <div class="spliter__bill">
+            <div class="spliter__title">
+              <label for="billInput">
+                <h2 class="spliter__label">Bill</h2>
+              </label>
+              <h3 class="spliter__msg">&nbsp;</h3>
+            </div>
+            <div class="spliter__inputContainer">
+              <input type="number" class="spliter__input" id="billInput" placeholder="0"/>
+              <div class="spliter__inputIcon">
+                <img src="./images/icon-dollar.svg" alt="dollarIcon">
+              </div>
+            </div>
           </div>
-          <div class="spliter__inputContainer">
-            <input type="number" class="spliter__input" id="billInput" placeholder="0"/>
-            <div class="spliter__inputIcon">
-              <img src="./images/icon-dollar.svg" alt="dollarIcon">
+          <div class="spliter__tip">
+            <h2 class="spliter__tipTitle">Select Tip %</h2>
+            <div class="spliter__buttons">
+              <button value="5" class="btn spliter__tipButton spliter__tipButton--5%">5%</button>
+              <button value="10" class="btn spliter__tipButton spliter__tipButton--10%">10%</button>
+              <button value="15" class="btn spliter__tipButton spliter__tipButton--15%">15%</button>
+              <button value="25" class="btn spliter__tipButton spliter__tipButton--25%">25%</button>
+              <button value="50" class="btn spliter__tipButton spliter__tipButton--50%">50%</button>
+              <input type="number" id="customInput" class="btn spliter__tipButton spliter__tipButton--custom" placeholder="Custom"/>
+            </div>
+          </div>
+          <div class="spliter__number">
+            <div class="spliter__title">
+              <label for="numberOfPeopleInput">
+                <h2 class="spliter__label">Number of People</h2>
+              </label>
+              <h3 class="spliter__msg">&nbsp;</h3>
+            </div>
+            <div class="spliter__inputContainer">
+              <input type="number" class="spliter__input"  id="numberOfPeopleInput" placeholder="0">
+              <div class="spliter__inputIcon">
+                <img src="./images/icon-person.svg" alt="personIcon">
+              </div>
             </div>
           </div>
         </div>
-        <div class="spliter__tip">
-          <h2 class="spliter__tipTitle">Select Tip %</h2>
-          <div class="spliter__buttons">
-            <button value="5" class="btn spliter__tipButton spliter__tipButton--5%">5%</button>
-            <button value="10" class="btn spliter__tipButton spliter__tipButton--10%">10%</button>
-            <button value="15" class="btn spliter__tipButton spliter__tipButton--15%">15%</button>
-            <button value="25" class="btn spliter__tipButton spliter__tipButton--25%">25%</button>
-            <button value="50" class="btn spliter__tipButton spliter__tipButton--50%">50%</button>
-            <input type="number" id="customInput" class="btn spliter__tipButton spliter__tipButton--custom" placeholder="Custom"/>
-          </div>
-        </div>
-        <div class="spliter__number">
-          <div class="spliter__title">
-            <label for="numberOfPeopleInput">
-              <h2 class="spliter__label">Number of People</h2>
-            </label>
-            <h5 class="spliter__msg"></h5>
-          </div>
-          <div class="spliter__inputContainer">
-            <input type="number" class="spliter__input"  id="numberOfPeopleInput" placeholder="0">
-            <div class="spliter__inputIcon">
-              <img src="./images/icon-person.svg" alt="personIcon">
+        <div class="spliter__results">
+          <div class="results">
+            <div class="results__item">
+              <div class="amount">
+                <h2 class="amount__title">Tip Amount</h2>
+                <h3 class="amount__subtitle">/ person</h3>
+              </div>
+              <h3 class="amount__price">$0.00</h3>
+            </div>
+            <div class="results__item">
+              <div class="amount">
+                <h2 class="amount__title">Total</h2>
+                <h3 class="amount__subtitle">/ person</h3>
+              </div>
+              <h3 class="amount__price">$0.00</h3>
             </div>
           </div>
+          <button class="btn spliter__resetButton" id="resetButton">RESET</button>
         </div>
-      </div>
-      <div class="spliter__results">
-        <div class="results">
-          <div class="results__item">
-            <div class="amount">
-              <h2 class="amount__title">Tip Amount</h2>
-              <h3 class="amount__subtitle">/ person</h3>
-            </div>
-            <h3 class="amount__price">$0.00</h3>
-          </div>
-          <div class="results__item">
-            <div class="amount">
-              <h2 class="amount__title">Total</h2>
-              <h3 class="amount__subtitle">/ person</h3>
-            </div>
-            <h3 class="amount__price">$0.00</h3>
-          </div>
-        </div>
-        <button class="btn spliter__resetButton" id="resetButton">RESET</button>
-      </div>
-    </form>
-  </section>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ulises Paz</a>.
-  </div>
-  <script src="./app/app.js"></script>
+      </form>
+    </main>
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ulises Paz</a>.
+    </footer>
+    <script src="./app/app.js"></script>
 </body>
 </html>
